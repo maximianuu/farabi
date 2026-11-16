@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+build/
+DerivedData/
+*.xcodeproj/
+tools/calibration_data/*
+!tools/calibration_data/README.md

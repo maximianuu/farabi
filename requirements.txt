@@ -1,0 +1,11 @@
+# Verified in a fresh virtual environment with: mlx 0.32.4, mlx-lm 0.32.2, mlx-vlm 0.7.12, llguidance 1.9.1, transformers 5.23
+# (see README, "What was verified"). Your MLX build must provide the "nvfp4" quantization mode.
+mlx
+mlx-lm==0.32.2
+mlx-vlm==0.7.12
+llguidance==1.9.1
+transformers>=5.22
+tokenizers
+safetensors
+numpy
+pillow

@@ -1,0 +1,9 @@
+;; Farabi engine — network lock
+;; The process may only talk to this Mac itself (127.0.0.1 / ::1). It cannot open outbound
+;; connections and cannot resolve names (no DNS). File and GPU access are unchanged.
+(version 1)
+(allow default)
+(deny network*)
+(allow network-bind (local ip "localhost:*"))
+(allow network-inbound (local ip "localhost:*"))
+(allow network-outbound (remote ip "localhost:*"))
